@@ -24,36 +24,57 @@
     <section id="formContainer" class="form-container">
         <h2 id="formTitle" class="form-title">Personalice su contraseña</h2>
         <form>
-            <div id="boxLength">
-                <h3>Longitud</h3>
-                <input type="radio" name="length">
-                <label>12 caracteres</label>
-                <input type="radio" name="length">
-                <label>9 caracteres</label>
-                <input type="radio" name="length">
-                <label>6 caracteres</label>
+            <div id="boxes">
+                <div id="boxLength">
+                    <h3>Longitud</h3>
+                    <div class="radio-lenght">
+                        <input type="radio" name="length">
+                        <label>12 caracteres</label>
+                    </div>
+                    <div class="radio-lenght">
+                        <input type="radio" name="length">
+                        <label>9 caracteres</label>
+                    </div>
+                    <div class="radio-lenght">
+                        <input type="radio" name="length">
+                        <label>6 caracteres</label>
+                    </div>
+                </div>
+                <div id="boxRules">
+                    <h3>Reglas</h3>
+                    <div class="radio-rules">
+                        <input type="radio" name="rules">
+                        <label>Sólo letras</label>
+                    </div>
+                    <div class="radio-rules">
+                       <input type="radio" name="rules">
+                        <label>Sólo números</label> 
+                    </div>
+                    <div class="radio-rules">
+                        <input type="radio" name="rules">
+                        <label>Todos los caracteres</label>
+                    </div>  
+                </div>
+                <div id="boxCharac">
+                    <h3>Caracteres</h3>
+                    <div class="check-charac">
+                        <input type="checkbox" name="uppercase">
+                        <label>Mayúsculas</label>
+                    </div>
+                    <div class="check-charac">
+                        <input type="checkbox" name="lowercase">
+                        <label>Minúsculas</label>
+                    </div>
+                    <div class="check-charac">
+                        <input type="checkbox" name="number">
+                        <label>Números</label>
+                    </div>
+                    <div class="check-charac">
+                        <input type="checkbox" name="symbol">
+                        <label>Símbolos</label>
+                    </div>
+                </div>
             </div>
-            <div id="boxRules">
-                <h3>Reglas</h3>
-                <input type="radio" name="rules">
-                <label>Sólo letras</label>
-                <input type="radio" name="rules">
-                <label>Sólo números</label>
-                <input type="radio" name="rules">
-                <label>Todos los caracteres</label>
-            </div>
-            <div id="boxCharac">
-                <h3>Caracteres</h3>
-                <input type="checkbox" name="uppercase">
-                <label>Mayúsculas</label>
-                <input type="checkbox" name="lowercase">
-                <label>Minúsculas</label>
-                <input type="checkbox" name="number">
-                <label>Números</label>
-                <input type="checkbox" name="symbol">
-                <label>Símbolos</label>
-            </div>
-
         </form>
     </section>
 <script src="./scripts/script.js"></script>    
