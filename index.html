@@ -14,11 +14,11 @@
     </div>
     <section id="passwordCard" class="password-card">
         <div id="passwordCharacter" class="password-character">
-            <h2>A1$.hek3dysa</h2>
+            <h2 id="passGenerated"></h2>
         </div>
         <div id="passwordButtons" class="password-buttons">
             <button><i class="fas fa-copy"></i></button>
-            <button><i class="fas fa-rotate-right"></i></button>
+            <button id="generatePassword">Generar</button>
         </div>
     </section>
     <section id="formContainer" class="form-container">
@@ -27,31 +27,31 @@
             <div id="boxes">
                 <div id="boxLength">
                     <h3>Longitud</h3>
-                    <div class="radio-lenght">
-                        <input type="radio" name="length">
+                    <div>
+                        <input type="radio" name="length" value="12" class="radio-length">
                         <label>12 caracteres</label>
                     </div>
-                    <div class="radio-lenght">
-                        <input type="radio" name="length">
+                    <div>
+                        <input type="radio" name="length" value="9" class="radio-length">
                         <label>9 caracteres</label>
                     </div>
-                    <div class="radio-lenght">
-                        <input type="radio" name="length">
+                    <div>
+                        <input type="radio" name="length" value="6" class="radio-length">
                         <label>6 caracteres</label>
                     </div>
                 </div>
                 <div id="boxRules">
                     <h3>Reglas</h3>
                     <div class="radio-rules">
-                        <input type="radio" name="rules">
+                        <input type="radio" name="rules" id="onlyLetters">
                         <label>Sólo letras</label>
                     </div>
                     <div class="radio-rules">
-                       <input type="radio" name="rules">
-                        <label>Sólo números</label> 
+                       <input type="radio" name="rules" id="alphaNumeric">
+                        <label>Alfanumérica</label> 
                     </div>
                     <div class="radio-rules">
-                        <input type="radio" name="rules">
+                        <input type="radio" name="rules" id="allChar">
                         <label>Todos los caracteres</label>
                     </div>  
                 </div>
