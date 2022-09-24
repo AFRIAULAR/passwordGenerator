@@ -5,7 +5,10 @@ let length = $('.radio-length').value
 let letters = $('#onlyLetters')
 let numeric = $('#alphaNumeric')
 let allChar = $('#allChar')
-let alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+let upperCase = $('#upperCase')
+let lowerCase = $('#lowerCase')
+let alphabet = "abcdefghijklmnopqrstuvwxyz"
+let upperLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 let numbers = "0123456789"
 let symbol = ".?,;-_¡!¿*%&$/"
 
@@ -22,6 +25,8 @@ const generate = () => {
     if (letters.checked) alphabet;
     if (numeric.checked) alphabet += numbers;
     if (allChar.checked) alphabet += numbers += symbol;
+    if (upperCase.checked) alphabet += upperLetters;
+    if (lowerCase.checked) alphabet;
 
     const passGenerated = $('#passGenerated')
     passGenerated.innerText = generatePassword(alphabet, length)
