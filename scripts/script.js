@@ -33,3 +33,12 @@ const button = $('#generatePassword')
 button.addEventListener("click", () => {
      generate();
 });
+
+// COPY CLIPBOARD
+const textToCopy = $("#passGenerated")
+const btnCopy = $("#btnCopy")
+
+btnCopy.addEventListener("click", () => {
+    let passwordCopy = textToCopy.innerText
+    navigator.clipboard.writeText(passwordCopy)
+})
