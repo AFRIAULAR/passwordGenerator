@@ -1,16 +1,29 @@
 const $ = (selector) => document.querySelector(selector)
 const $$ = (selectors) => document.querySelectorAll(selectors)
 
-let length = $('.radio-length').value 
 let letters = $('#onlyLetters')
 let numeric = $('#alphaNumeric')
 let allChar = $('#allChar')
 let upperCase = $('#upperCase')
 let lowerCase = $('#lowerCase')
+
 let alphabet = "abcdefghijklmnopqrstuvwxyz"
+//const arrayAlphabet = Array.from(alphabet)
+//console.log(arrayAlphabet)
 let upperLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+//const arrayAlphabetUpper = Array.from(upperLetters)
+//console.log(arrayAlphabetUpper)
 let numbers = "0123456789"
+//const arrayNumbers = Array.from(numbers)
+//console.log(arrayNumbers)
 let symbol = ".?,;-_¡!¿*%&$/"
+//const arraySymbol = Array.from(symbol)
+//console.log(arraySymbol)
+//let length = $('#lengthChar')
+const form = $('#formContainer')
+let length = document.getElementById('lengthChar');
+
+
 
 const generatePassword = (alphabet, length) => {
     let password = "";
@@ -22,6 +35,8 @@ const generatePassword = (alphabet, length) => {
 }
 
 const generate = () => {
+    let length = lengthChar.value    
+    
     if (letters.checked) alphabet;
     if (numeric.checked) alphabet += numbers;
     if (allChar.checked) alphabet += numbers += symbol;
