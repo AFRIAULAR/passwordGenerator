@@ -17,8 +17,8 @@
             <h2 id="passGenerated"></h2>
         </div>
         <div id="passwordButtons" class="password-buttons">
-            <button id="btnCopy" ><i class="fas fa-copy" id="toCopy"></i></button>
-            <button id="generatePassword">Generar</button>
+            <button id="btnCopy"><i class="fas fa-copy" id="toCopy"></i></button>
+            <button id="generatePassword" type="submit">Generar</button>
         </div>
     </section>
     <section id="formContainer" class="form-container">
@@ -27,9 +27,21 @@
             <div id="boxes">
                 <div id="boxLength">
                     <h3>Longitud</h3>
-                    <label for="labelLength"></label>
+                    <div>
+                        <input type="radio" name="length" value="12" class="radio-length" id="length12">
+                        <label>12 caracteres</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="length" value="9" class="radio-length" id="length9">
+                        <label>9 caracteres</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="length" value="6" class="radio-length" id="length6">
+                        <label>6 caracteres</label>
+                    </div>
+                    <!-- <label for="labelLength"></label>
                     <input type="number" id="lengthChar" name="length" placeholder="Introduce la cantidad de caracteres" value=" "> 
-                    <h3 id="errMsg"></h3>
+                    <h3 id="errMsg"></h3> -->
                 </div>
                 <div id="boxRules">
                     <h3>Reglas</h3>
