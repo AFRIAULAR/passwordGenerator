@@ -1,8 +1,13 @@
 const $ = (selector) => document.querySelector(selector)
 const $$ = (selectors) => document.querySelectorAll(selectors)
 
+// VARIABLES
 const button = $('#generatePassword')
-let length = document.getElementById('lengthChar');
+const passGenerated = $('#passGenerated')
+let length = document.getElementById('lengthChar')
+const length12 = $("#length12")
+const length9 = $("#length9")
+const length6 = $("#length6")
 
 let upperCase = $('#upperCase')
 let lowerCase = $('#lowerCase')
@@ -18,6 +23,9 @@ let upperLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 let numbers = "0123456789"
 let symbol = ".?;-_¡!¿*%&$/"
 let selectedOptions = []
+
+const textToCopy = $("#passGenerated")
+const btnCopy = $("#btnCopy")
 
 // CUSTOM EVENTS
 upperCase.addEventListener("click", (e) => {
@@ -85,50 +93,23 @@ allChar.addEventListener("click", () => {
     onlyLetters.checked = false; 
 })
 
-
-
-
-
-
-
-
-// const generatePassword = (alphabet, length) => {
-//     let password = "";
-//     if(length > 5 && length <13) {
-//         for (let i = 0; i < length; i++) {
-//         let random = Math.floor(Math.random() * alphabet.length);
-//         password += alphabet.charAt(random);
-//     }
-// //falta agregar msg de error
-//     }
-//     return password
-// }
-
-// const generate = () => {
-//     let length = lengthChar.value    
-    
-//     if (letters.checked) alphabet;
-//     if (numeric.checked) alphabet += numbers;
-//     if (allChar.checked) alphabet += numbers += symbol;
-//     if (upperCase.checked) alphabet += upperLetters;
-//     if (lowerCase.checked) alphabet;
-
-//     const passGenerated = $('#passGenerated')
-//     passGenerated.innerText = generatePassword(alphabet, length)
-
-// }
-    
-
-// EVENT GENERATE
+// GENERATE PASSWORD
 button.addEventListener("click", () => {
-     generate();
-});
+    if (length12.checked)length = length12.value
+    if (length9.checked)length = length9.value
+    if (length6.checked)length = length6.value
+
+    let password = selectedOptions.join('')
+    let passwordGenerated = "";
+    for (let i = 0; i < length; i++) {
+        passwordGenerated += password.charAt(Math.floor(Math.random() * password.length));
+    }
+    passGenerated.innerHTML = passwordGenerated
+})
 
 // COPY CLIPBOARD
-const textToCopy = $("#passGenerated")
-const btnCopy = $("#btnCopy")
-
 btnCopy.addEventListener("click", () => {
     let passwordCopy = textToCopy.innerText
     navigator.clipboard.writeText(passwordCopy)
 })
+
