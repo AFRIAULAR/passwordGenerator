@@ -10,35 +10,38 @@
 </head>
 <body>
     <div id="title">
-        <h1 class="title-name">Generador de contraseñas</h1>
+        <h1 class="title-name">GENERADOR DE CONTRASEÑAS</h1>
     </div>
     <section id="passwordCard" class="password-card">
         <div id="passwordCharacter" class="password-character">
             <h2 id="passGenerated"></h2>
         </div>
         <div id="passwordButtons" class="password-buttons">
-            <button id="btnCopy" ><i class="fas fa-copy" id="toCopy"></i></button>
-            <button id="generatePassword">Generar</button>
+            <button id="btnCopy"><i class="fas fa-copy" id="toCopy"></i></button>
+            <button id="generatePassword" type="submit">Generar</button>
         </div>
     </section>
     <section id="formContainer" class="form-container">
         <h2 id="formTitle" class="form-title">Personalice su contraseña</h2>
-        <form>
+        <form id="form" name="formName">
             <div id="boxes">
                 <div id="boxLength">
                     <h3>Longitud</h3>
                     <div>
-                        <input type="radio" name="length" value="12" class="radio-length">
+                        <input type="radio" name="length" value="12" class="radio-length" id="length12">
                         <label>12 caracteres</label>
                     </div>
                     <div>
-                        <input type="radio" name="length" value="9" class="radio-length">
+                        <input type="radio" name="length" value="9" class="radio-length" id="length9">
                         <label>9 caracteres</label>
                     </div>
                     <div>
-                        <input type="radio" name="length" value="6" class="radio-length">
+                        <input type="radio" name="length" value="6" class="radio-length" id="length6">
                         <label>6 caracteres</label>
                     </div>
+                    <!-- <label for="labelLength"></label>
+                    <input type="number" id="lengthChar" name="length" placeholder="Introduce la cantidad de caracteres" value=" "> 
+                    <h3 id="errMsg"></h3> -->
                 </div>
                 <div id="boxRules">
                     <h3>Reglas</h3>
@@ -66,11 +69,11 @@
                         <label>Minúsculas</label>
                     </div>
                     <div class="check-charac">
-                        <input type="checkbox" name="number">
+                        <input type="checkbox" name="number" id="numeric">
                         <label>Números</label>
                     </div>
                     <div class="check-charac">
-                        <input type="checkbox" name="symbol">
+                        <input type="checkbox" name="symbol" id="symbols">
                         <label>Símbolos</label>
                     </div>
                 </div>

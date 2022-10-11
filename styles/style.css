@@ -7,6 +7,14 @@
 body{
     background-image: URL("../assets/img/1.png");
 }
+h1{
+    font-size: medium;
+    color: blueviolet;
+}
+h2, h3{
+    font-size: small;
+}
+
 #title, #passwordCard, #formContainer{
     background-color:  rgba(248, 242, 242, 0.678);
     border-radius: 20px;
@@ -14,10 +22,82 @@ body{
     padding: 15px;
     text-align: center;
 }
-#boxes, #boxLength, #boxRules, #boxCharac{
+#boxes, #boxLength, #boxCharac, #boxRules{
+    padding: 10px;
     display: flex;
     flex-direction: column;
 }
 .radio-lenght, .radio-rules, .check-charac{
     display: flex;
 }
+#generatePassword, #btnCopy{
+    padding: 5px;
+    border-radius: 10%;
+    color:blueviolet;
+    border-color: gray;
+}
+#passGenerated{
+    font-size: x-large;
+}
+
+@media (min-width: 768px){
+    h1{
+        font-size: x-large;
+    }
+    h2, h3{
+        font-size: medium;
+    }
+    #passGenerated{
+        font-size: 30px;
+    }
+    #form, #passwordCard{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+    #boxes{
+        display: flex;
+        flex-direction: row;        
+    }
+    #boxLength, #boxCharac, #boxRules{
+        display: flex;
+        margin: 10px 30px;
+    }
+    
+}
+
+@media (min-width: 1024px){
+    h1{
+        font-size: xx-large;
+    }
+    h2, h3{
+        font-size: x-large;
+    }
+    #passGenerated{
+        font-size: 40px;
+    }
+    #form, #passwordCard{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+    #passwordCard{
+        justify-content: space-evenly;
+    }
+    #boxes{
+        display: flex;
+        flex-direction: row;        
+    }
+    #boxLength, #boxCharac, #boxRules{
+        display: flex;
+        margin: 10px 30px;
+    }
+    #generatePassword, #btnCopy{
+        padding: 15px;
+        border-radius: 10%;
+    }
+    
+}
+
