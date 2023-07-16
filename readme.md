@@ -1,9 +1,26 @@
-# PASSWORD GENERATOR 
+# Generador de Contraseñas - README
 
-##### El siguiente proyecto es un generador de password, en el que podrás elegir la longitud del mismo y distintas características como mayúsculas, minúsculas, caracteres alfanuméricos y símbolos. Además permite compiarlo en el portapapeles para luego poder ser utilizado.
+¡Bienvenido al Generador de Contraseñas! Este proyecto es una herramienta en línea que te permite generar contraseñas seguras y personalizadas. Puedes ajustar la longitud de la contraseña y elegir qué tipos de caracteres incluir, como letras mayúsculas, letras minúsculas, números y caracteres especiales.
 
+Puedes acceder al Generador de Contraseñas en vivo [aquí](https://afriaular.github.io/passwordGenerator/).
 
-## Lenguajes y tecnologías:
+## Características principales
+
+- Genera contraseñas seguras y aleatorias.
+- Permite ajustar la longitud de la contraseña.
+- Permite seleccionar los tipos de caracteres a incluir en la contraseña.
+- Proporciona una visualización en tiempo real de la contraseña generada.
+- Fácil de usar y con una interfaz intuitiva.
+
+## Uso
+
+1. Abre el enlace del Generador de Contraseñas: [https://afriaular.github.io/passwordGenerator/](https://afriaular.github.io/passwordGenerator/).
+2. Ajusta la longitud de la contraseña utilizando el control deslizante o ingresando un número en el campo correspondiente.
+3. Selecciona los tipos de caracteres que deseas incluir en la contraseña marcando las casillas correspondientes.
+4. Observa cómo se genera y actualiza automáticamente una contraseña segura en tiempo real.
+5. Si deseas generar una nueva contraseña, simplemente ajusta la configuración nuevamente o haz clic en el botón "Generar Nueva Contraseña".
+
+## Tecnologías utilizadas
 <h3></h3>
     <ul>
         <li> 
@@ -17,4 +34,12 @@
         </li>
     </ul> 
 
-#### Hecho con mucho 🧉 y 💜 por Afri
+## Créditos
+
+Este proyecto ha sido realizado con mucho 🧉 y 💜 por [Africa Aular](https://github.com/afriaular).
+
+## Contribuciones
+
+Las contribuciones son bienvenidas. Si deseas realizar mejoras o corregir problemas en el Generador de Contraseñas, no dudes en enviar un pull request o abrir un issue en el repositorio.
+
+¡Disfruta del Generador de Contraseñas y mantén tus contraseñas seguras! Si tienes alguna pregunta o comentario, no dudes en contactar al desarrollador o dejar un issue en el repositorio. ¡Gracias por usar el Generador de Contraseñas!
